@@ -1,5 +1,5 @@
 import { Router } from "express";
-import db from "../db/connection";
+import db from "../db/connection.js";
 import { ObjectId } from "mongodb";
 
 const router = Router();
@@ -67,4 +67,4 @@ router.delete("/:id", async (req, res) => {
 	}
 });
 
-export default records;
+export default router;

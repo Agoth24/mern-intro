@@ -10,6 +10,6 @@ app.use(express.json());
 app.use("./record", records);
 
 app.listen(PORT, () => {
-	console.log(`Up and running on port ${PORT}`);
+	console.log(`Server listening on port ${PORT}`);
 	console.log(`Process ID: ${process.pid}`);
 });
